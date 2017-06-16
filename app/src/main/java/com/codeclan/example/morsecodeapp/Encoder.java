@@ -68,7 +68,11 @@ class Encoder {
                 sb.append("/ ");
             }
         }
-        sb.deleteCharAt(sb.length()-1);
+
+        // Remove the last character if it's not an empty string
+        if(sb.length() > 0){
+            sb.deleteCharAt(sb.length()-1);
+        }
         return sb.toString();
     }
 }

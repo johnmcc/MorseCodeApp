@@ -18,7 +18,12 @@ public class TestMorseCodeEncoder {
     public void testGetPhrase() throws Exception {
         encoder.setPhrase("The quick brown fox");
         assertEquals("The quick brown fox", encoder.getPhrase());
+    }
 
+    @Test
+    public void testEmptyStringReturnsEmptyString() throws Exception {
+        encoder.setPhrase("");
+        assertEquals("", encoder.encode());
     }
 
     @Test
