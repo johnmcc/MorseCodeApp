@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         updateUI();
 
         player.setMorse(encoder.encode());
-        player.play();
-
+        player.start();
     }
 }

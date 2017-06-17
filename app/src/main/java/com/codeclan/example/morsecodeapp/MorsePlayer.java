@@ -7,7 +7,7 @@ package com.codeclan.example.morsecodeapp;
 import android.media.AudioManager;
 import android.media.ToneGenerator;
 
-public class MorsePlayer {
+public class MorsePlayer extends Thread {
     String morse;
     ToneGenerator tg;
 
@@ -31,7 +31,8 @@ public class MorsePlayer {
         }
     }
 
-    public void play(){
+    @Override
+    public void run(){
         String words[] = this.morse.split(" / ");
         Character dit = '.';
         Character dah = '-';
