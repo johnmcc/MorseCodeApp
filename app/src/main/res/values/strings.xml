@@ -2,4 +2,5 @@
     <string name="app_name">MorseCodeApp</string>
     <string name="welcome_msg">Enter the message you\'d like to be encoded</string>
     <string name="encode">Encode</string>
+    <string name="play">Play!</string>
 </resources>
